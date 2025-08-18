@@ -35,7 +35,7 @@ function on${ucfirst(name)}() {
 }
 `)
     })
-    const newPosition = new Position(position.line + 1, 2)
+    const newPosition = new Position(position.line + 2, 2)
     activeTextEditor.value!.selection = new Selection(newPosition, newPosition)
   },
 }
