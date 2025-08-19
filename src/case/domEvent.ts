@@ -1,6 +1,6 @@
 import type { TextDocument, TextDocumentContentChangeEvent } from 'vscode'
 import { useActiveTextEditor } from 'reactive-vscode'
-import { Position, Selection } from 'vscode'
+import { Position, Range, Selection } from 'vscode'
 import { findUntil, ucfirst } from '../utils'
 
 const activeTextEditor = useActiveTextEditor()
@@ -37,5 +37,6 @@ function on${ucfirst(name)}() {
     })
     const newPosition = new Position(position.line + 2, 2)
     activeTextEditor.value!.selection = new Selection(newPosition, newPosition)
+    activeTextEditor.value!.revealRange(new Range(newPosition, newPosition))
   },
 }
