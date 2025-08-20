@@ -2,7 +2,7 @@
   "publisher": "micaiguai",
   "name": "vscode-vue-autocomplete",
   "displayName": "Vue 3 Autocomplete In Vscode",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "packageManager": "pnpm@10.4.1",
   "description": "vscode-vue-autocomplete description",
